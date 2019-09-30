@@ -1,0 +1,4 @@
+Class: CSCI 111
+Instructor: Buffardi
+Section: 07
+Lab time: 4pm
