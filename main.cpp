@@ -9,7 +9,7 @@ int main()
   string fileName; //to get the name of the file to open
   string line; //to store a single line of a text file
   fstream fileStream; //to open a file for reading
-  int charactersCounted; //number of character in line
+  int charactersCounted = 0; //number of character in line
   int linesCounted = 0; //number of lines in file 
  char response;   
 
@@ -36,7 +36,7 @@ getline( fileStream, line) ;
 // 3B: display the line, followed by an endline
 if  (!line.empty()) ;
 {
-charactersCounted = line.length() + charactersCounted;
+charactersCounted = charactersCounted + line.length();
 linesCounted +=1; 
 cout<< line<<endl;
 
@@ -51,7 +51,7 @@ fileStream.close();
 else
   {
     cout<<fileName<<" could not be opened.\n";
-  }
+  } 
 cout<< "METADATA\n" <<"File: " <<fileName<< "\n" <<"Lines: " <<linesCounted<< "\n" <<"Characters: "<<charactersCounted<< "\n"; 
 
 
@@ -83,7 +83,7 @@ getline( fileStream, line) ;
 // 3B: display the line, followed by an endline
 if  (!line.empty()) ;
 {
-charactersCounted = line.length() + charactersCounted;
+charactersCounted = charactersCounted + line.length();
 linesCounted +=1;
 cout<< line<<endl;
 
@@ -107,4 +107,4 @@ cin>> response;
 
 while (response == 'y'|| response == 'Y'); 
   return 0;
-}
+ }
