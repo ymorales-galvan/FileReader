@@ -52,7 +52,7 @@ else
   {
     cout<<fileName<<" could not be opened.\n";
   }
-cout<< "METADATA\n" <<"File:"<<fileName<< "\n" <<"Lines:"<<linesCounted<< "\n" <<"Character"<<charactersCounted<< "\n"; 
+cout<< "METADATA\n" <<"File:" <<fileName<< "\n" <<"Lines:" <<linesCounted<< "\n" <<"Character"<<charactersCounted<< "\n"; 
 
   return 0;
 }
