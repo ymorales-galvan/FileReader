@@ -18,7 +18,7 @@ int main()
 
                 cout<<"What file do you want to open? ";
                 getline(cin, fileName);
-                cout<< "file name" ;
+                
 
                 //STEP 1: open the fileStream for input, using the fileName specified
 
