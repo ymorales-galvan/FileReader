@@ -34,9 +34,9 @@ while (!fileStream.eof() )
 getline( fileStream, line) ;
 
 // 3B: display the line, followed by an endline
-if (!line.empty()) 
+if  (!line.empty()) 
 {
-charactersCounted = line.length() + charactersCounted ;
+charactersCounted = line.length();
 linesCounted +=1; 
 cout<< line<<endl;
 
@@ -52,7 +52,7 @@ else
   {
     cout<<fileName<<" could not be opened.\n";
   }
-cout<< "METADATA\n" <<"File: " <<fileName<< "\n" <<"Lines: " <<linesCounted<< "\n" <<"Characters "<<charactersCounted<< "\n"; 
+cout<< "METADATA\n" <<"File: " <<fileName<< "\n" <<"Lines: " <<linesCounted<< "\n" <<"Characters: "<<charactersCounted<< "\n"; 
 
   return 0;
 }
