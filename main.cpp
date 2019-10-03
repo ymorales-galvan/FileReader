@@ -36,7 +36,7 @@ getline( fileStream, line) ;
 // 3B: display the line, followed by an endline
 if (!line.empty()) 
 {
-charactersCounted = line.length();
+charactersCounted = line.length() + charactersCounted ;
 linesCounted +=1; 
 cout<< line<<endl;
 
